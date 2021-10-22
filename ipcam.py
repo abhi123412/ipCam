@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 import imutils
 
-url = 'http://192.168.27.203:8080/shot.jpg'
+url = 'http://192.168.27.203:8080/shot.jpg'  # ip address from phone
 while True:
     imgPath = urllib.request.urlopen(url)
     imgNp = np.array(bytearray(imgPath.read()), dtype=np.uint8)
